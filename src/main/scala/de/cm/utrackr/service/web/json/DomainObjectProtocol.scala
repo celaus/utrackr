@@ -6,6 +6,8 @@ import com.typesafe.scalalogging.LazyLogging
 import de.afs.platform.common.utils.EncodedId
 import de.afs.platform.domain.User
 import de.afs.platform.service.web.dto._
+import de.cm.utrackr.domain.User
+import de.cm.utrackr.service.web.dto.{CheckGameResultRequest, NewGameSessionRequest, LoginDataRequest}
 import spray.json._
 
 

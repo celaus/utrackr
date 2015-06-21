@@ -1,14 +1,15 @@
 package de.cm.utrackr.service.web
 
-import de.afs.platform.common.config.AuthenticationConfiguration
-import de.afs.platform.common.utils.EncodedId
-import de.afs.platform.logic.{TokenManager, UserManager}
-import de.afs.platform.service.web.authentication.{JWTAuthentication, UserAuthenticator}
-import de.afs.platform.service.web.dto.{UserDataResponse, LoginDataRequest, ResetPasswordDataRequest, TokenDataResponse}
-import de.afs.platform.service.web.json.DomainObjectProtocol._
-import spray.httpx.SprayJsonSupport._
+import de.cm.utrackr.common.config.AuthenticationConfiguration
+import de.cm.utrackr.common.utils.EncodedId
+import de.cm.utrackr.logic.{TokenManager, UserManager}
+import de.cm.utrackr.service.web.authentication.{JWTAuthentication, UserAuthenticator}
+import de.cm.utrackr.service.web.dto.{LoginDataRequest, ResetPasswordDataRequest, TokenDataResponse, UserDataResponse}
 import spray.routing.HttpService._
 import spray.routing._
+import de.cm.utrackr.service.web.json.DomainObjectProtocol._
+import spray.httpx.SprayJsonSupport._
+
 
 import scala.concurrent.ExecutionContext.Implicits.global
 

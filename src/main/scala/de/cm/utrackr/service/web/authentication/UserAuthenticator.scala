@@ -1,11 +1,13 @@
 package de.cm.utrackr.service.web.authentication
 
 import com.github.nscala_time.time.Imports._
-import de.afs.platform.domain.AuthenticationInfo
-import de.afs.platform.logic.UserManager
-import de.afs.platform.logic.managers.JWTClaimsAttributes
+import de.cm.utrackr.common.jwt.JWTClaimsAttributes
+import de.cm.utrackr.domain.AuthenticationInfo
+import de.cm.utrackr.logic.UserManager
 
 import scala.concurrent.{ExecutionContext, Future}
+
+
 
 
 trait UserAuthenticator extends JWTClaimsAttributes {

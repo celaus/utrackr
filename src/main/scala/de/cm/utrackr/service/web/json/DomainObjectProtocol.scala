@@ -3,11 +3,9 @@ package de.cm.utrackr.service.web.json
 import java.net.URI
 
 import com.typesafe.scalalogging.LazyLogging
-import de.afs.platform.common.utils.EncodedId
-import de.afs.platform.domain.User
-import de.afs.platform.service.web.dto._
+import de.cm.utrackr.common.utils.EncodedId
 import de.cm.utrackr.domain.User
-import de.cm.utrackr.service.web.dto.{CheckGameResultRequest, NewGameSessionRequest, LoginDataRequest}
+import de.cm.utrackr.service.web.dto.{LoginDataRequest, ResetPasswordDataRequest, TokenDataResponse, UserDataResponse}
 import spray.json._
 
 
@@ -41,17 +39,13 @@ object DomainObjectProtocol extends DefaultJsonProtocol {
   //
 
   implicit val loginDataRequestFormat = jsonFormat2(LoginDataRequest)
-  implicit val newGameSessionRequestFormat = jsonFormat3(NewGameSessionRequest)
-  implicit val checkGameResultRequestFormat = jsonFormat2(CheckGameResultRequest)
+
 
   //
   // Responses
   //
 
-  implicit val videoAssetResponseFormat = jsonFormat4(AssetResponse)
-  implicit val checkGameResultResponseFormat = jsonFormat3(CheckGameResultResponse)
-  implicit val nextTrialsResponseFormat = jsonFormat3(NextTrialsResponse)
-  implicit val newGameSessionResponseFormat = jsonFormat1(NewGameSessionResponse)
+
   implicit val loginDataResponseFormat = jsonFormat2(UserDataResponse)
   implicit val resetPasswordDataRequestFormat = jsonFormat1(ResetPasswordDataRequest)
   implicit val tokenDataResponseFormat = jsonFormat1(TokenDataResponse)

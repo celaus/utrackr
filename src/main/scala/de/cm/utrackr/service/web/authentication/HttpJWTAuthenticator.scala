@@ -3,8 +3,7 @@ package de.cm.utrackr.service.web.authentication
 import authentikat.jwt._
 import com.fasterxml.jackson.core.JsonParseException
 import com.typesafe.scalalogging.LazyLogging
-import de.afs.platform.common.config.AuthenticationConfiguration
-import de.afs.platform.service.web.authentication.authentication.TokenAuthenticator
+import de.cm.utrackr.common.config.AuthenticationConfiguration
 import spray.http.{HttpCredentials, HttpRequest, OAuth2BearerToken}
 import spray.routing.RequestContext
 import spray.routing.authentication.HttpAuthenticator

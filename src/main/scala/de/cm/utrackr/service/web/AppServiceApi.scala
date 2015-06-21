@@ -1,6 +1,6 @@
 package de.cm.utrackr.service.web
 
-import akka.actor.{ActorRefFactory, ActorContext}
+import akka.actor.ActorRefFactory
 import com.typesafe.scalalogging.LazyLogging
 import spray.routing.HttpService._
 

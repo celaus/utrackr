@@ -1,7 +1,7 @@
 package de.cm.utrackr.service.web.utils
 
-import de.afs.platform.common.config.{AppConfig, HashIdConfiguration}
-import de.afs.platform.common.utils.EncodedId
+import de.cm.utrackr.common.config.AppConfig
+import de.cm.utrackr.common.utils.EncodedId
 import spray.routing.{PathMatcher, PathMatcher1}
 
 object PathMatchers extends AppConfig.HashId {
